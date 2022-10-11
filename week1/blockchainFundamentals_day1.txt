@@ -1,0 +1,32 @@
+Transaction
+
+Architecture of Transaction (transaction object)
+  - {
+    from: (sender's wallet address),
+    to: (receiver's wallet address),
+    gas: (unit of transaction fee),
+    gasPrice: (amount of transaction fee),
+    value: (amount to be transfered) (optional)
+    data:  (hash of the smart contract) (optional)
+  }
+    - either value or data needs to be passed
+    - transaction fees = gas * gas price
+
+Lifecycle of transaction
+  - build transaction object
+  - sign transaction (sender authorises the transaction object)
+  - send transaction
+  - mine transaction (miner picks the transaction and validates and adds the transaction in blockchian)
+  - side effect of transaction (update the balance post transaction)
+
+Smart Contract
+  - code that runs on a blockchain
+  Pros:
+    - immutability
+    - censorship resistant (no centralised authority to block or withhold the transaction)
+    - very safe (51% vote concepts)
+    - easy to transfer
+  Cons:
+    - expensive (higher transaction fees)
+    - slow (validation and adding to blockchain takes time)
+    - limited capabalitites 
