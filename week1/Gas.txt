@@ -1,0 +1,33 @@
+Gas (Transaction fee - Tx fees)
+  - fee to reward miners
+  - sender pays the fee
+  - miners receive the fee
+
+Formula
+  Tx fees = Gas cost * Gas price
+
+  Tx fees are measured in gas
+  Gas cost
+    - bare minimum limit, 
+    - calculated by EVM
+  Gas price 
+    - quantity, 
+    - set by the sender, 
+    - higher the gas price faster the addition to 
+    
+Gas price calculation
+  - Every EVM's function execution is broken into assembly operations and every assembly operation has some gas cost.
+
+  Gas price => is the value set by sender 
+  Total gas cost => Sum of all assembly operation gas cost
+    Tx fees = Gas price * Total gas cost
+
+  - User can also set the max gas cost (Gas limit)
+  Tx fees = Gas price * Min( Total gas cost, Gas limit )
+
+
+  
+
+Solidity ether units
+  1 Wei  = 10 ^ -18 Ether
+  1 GWei = 10 ^ -9 Ether
