@@ -1,0 +1,34 @@
+Ethereum accounts
+  - Externally owned account (EOA)
+      - can initiate and sign a transaction
+      - controlled by anyone with the private keys
+  - Contract accounts
+      - a smart contract deployed to the network controlled by code
+
+Account fields
+  - balance
+      EOA       - ether balance
+      contract  - ether balance
+  - data
+      EOA       - empty
+      contract  - data of smart contract
+  - code 
+      EOA       - empty
+      contract  - code of smart contract
+  - nonce
+      EOA       - no. of transaction sent by the address
+      contract  - no. of smart contracts created by the address
+
+
+Ethereum client
+  - software to run ethereum network
+  - Mostly used clients,
+    - Geth (Go)
+    - Parity (Rust)
+    - Hyperledger Besu (Java (enterprise level))
+
+Ethereum Networks
+  - local (used for local development in machine)
+  - public testnet (exactly same as mainnet but with fake currency - sandbox environment)
+  - mainnet (production)
+  - private network

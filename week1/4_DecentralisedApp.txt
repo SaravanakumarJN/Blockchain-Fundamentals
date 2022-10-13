@@ -1,0 +1,21 @@
+Decentralised App (Dapp)
+  - User Interface + Smart contract
+
+  Most common categories
+  - Defi (Decentralsied finance)
+  - Game
+  - Gambling ., 
+
+
+Architecture of Dapp
+  - Smart contract layer (lives on blockchain and stores the sensitive information and business logic)
+  - Frontend layer
+  - Backend layer (optional)
+
+Dapp development process
+  - Data modelling
+  - Development of smart contract
+  - Test smart contract (Truffle)
+  - Build frontend 
+  - Deploy (first in testnet and then to mainnet)
+
