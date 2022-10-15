@@ -1,0 +1,35 @@
+Variables
+  - Fixed sized type
+    - address (64 bit) 
+    - boolean (1 byte)
+    - bytes (32 byte)
+    - unsigned integer (positive integer)
+  - Dynamic sized type
+    - string 
+    - array (only single type)
+    - mappings (key value pair)
+    - bytes
+  -  User defined / Custom type
+    - struct
+    - enum
+
+
+Initalising a variable 
+<variable type> <visibility type (optional)> <variable name> = <value of the variable>
+
+
+Constructor
+  - used to initialise variables with user input as value inside a contract
+
+Functions 
+  - used to get and set data from the Constructor
+
+  Function visibility:
+  - private (can be used only inside the contract)
+  - public (can be used both inside and outside the contract)
+  - external (can be used only outside the contract and not in other contract)
+  - internal (can be used only inside the contract and other contract)
+
+  Function mutability
+  - Transaction Function (write / setter) 
+  - View Function (read / getter)
