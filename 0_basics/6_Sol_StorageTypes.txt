@@ -1,0 +1,22 @@
+Storage
+  - It's persistent (stores in blockchain) and can be used later
+  - Mostly used for state variables in contract and pointer's for state variables inside a function
+
+
+Memory (runtime memory)
+  - Can be used for read variables
+  - Can be used inside the function as well as argument for function
+
+
+Calldata (runtime memory)
+  - Can be used for read variables
+  - Can be used only for function arguments (consumes less gas fees)
+
+Stack (runtime memory)
+  - Runtime memory for "static" variables declared inside a function 
+  - There is limit for static variable (of type stack) that can be declared in a function.
+
+Built in variables in Solidity
+  - tx
+  - msg
+  - block .,
