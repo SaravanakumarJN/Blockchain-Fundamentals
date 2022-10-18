@@ -13,6 +13,7 @@ async function main() {
 
   // add a employee using the function created in contract 
   await BasicCrudInstance.addEmployee("Saravana", 23, "saravana.jn@developer.com", "0xd5e94701BF42d6926d2E92Ea2F00f3443f4263A0")
+  await BasicCrudInstance.addEmployee("Srini.JN", 25, "srini.jn@developer.com", "0xd5e94701BF42d6926d2E92Ea2F00f3443f4263A0")
 
   const employeeCountAfter = await BasicCrudInstance.employeeCount()
   console.log(employeeCountBefore,employeeCountAfter)
@@ -26,6 +27,18 @@ async function main() {
 
   const updatedEmployeeDetails = await BasicCrudInstance.Employees(0)
   console.log(updatedEmployeeDetails)
+
+  // deleting the detail using function created in contract
+  // await BasicCrudInstance.deleteEmployee1("saravana.jn@developer.com")
+
+  // const employeeCountAfterDelete1 = await BasicCrudInstance.employeeCount()
+  // console.log(employeeCountAfterDelete1)
+
+  // deleting the detail using function created in contract
+  await BasicCrudInstance.deleteEmployee2("saravana.jn@developer.com")
+
+  const employeeCountAfterDelete2 = await BasicCrudInstance.employeeCount()
+  console.log(employeeCountAfterDelete2)
 }
 
 main().catch((error) => {
