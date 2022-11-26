@@ -1,5 +1,5 @@
 {
-  "name": "fund-transfer",
+  "name": "basic-fundtransfer-livetestnetwork",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,5 +12,8 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^2.0.0",
     "hardhat": "^2.12.2"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3"
   }
 }
